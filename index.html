@@ -11,7 +11,7 @@
             <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Device">
           </a>
           <form action="/echo" method="post">
-            <label for="search">Поиск по сайту</label>
+            <label class="visually-hidden" for="search">Поиск по сайту</label>
             <input type="search" name="search" id="search" autofocus placeholder="Поиск по сайту">
             <input type="submit" value="Поиск по сайту">
           </form>
@@ -63,9 +63,37 @@
             покупки. Всякое бывает.
           </p>
           <a href="map.html">
-            <img src="img/map-jpg.jpg" width="560" height="222" alt="Карта">
+            <img src="img/map-jpg.jpg" width="560" height="222" alt="Мы находимся по адресу г.Москва, ул.Строителей, 15">
           </a>
-          <a class="button" href="contacts.html">Напишите нам</a>
+          <a class="button" href="write-to-us.html">Напишите нам</a>
+        </section>
+
+        <section class="modal modal-write">
+          <h2>Напишите нам</h2>
+          <form class="write-form" action="/echo" method="post">
+            <p class="write-item">
+              <label for="write-name">Ваше имя:</label>
+              <input id="write-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p class="write-item">
+              <label for="write-email">Ваш e-mail:</label>
+              <input id="write-email" type="email" name="email" value="" placeholder="email@example.com">
+            </p>
+            <p class="write-item">
+              <label for="write-comment">Текст письма:</label>
+              <textarea id="write-comment" name="comment" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+          <button class="modal-close" type="button">Закрыть</button>
+        </section>
+
+        <section class="modal modal-map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <p>
+            <img src="img/map-big-jpg.jpg" width="960" height="559" alt="Мы находимся по адресу г.Москва, ул.Строителей, 15">
+          </p>
+          <button class="modal-close" type="button">Закрыть</button>
         </section>
 
       </main>

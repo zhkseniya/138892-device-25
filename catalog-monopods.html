@@ -52,7 +52,61 @@
       
       <section class="filters">
         <h2>Фильтр:</h2>
-        <!-- Здесь будет форма для фильтра -->
+        <form class="filter" action="/echo" method="get">
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-black" type="checkbox" checked>
+                  Черный
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-white" type="checkbox">
+                  Белый
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-blue" type="checkbox" checked>
+                  Синий
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-red" type="checkbox" checked>
+                  Красный
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-pink" type="checkbox">
+                  Розовый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-radio" name="bluetooth" type="radio" value="yes" checked>
+                  Есть
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-radio" name="bluetooth" type="radio" value="no">
+                  Нет
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
