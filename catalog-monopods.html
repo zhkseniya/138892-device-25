@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс. Моноподы для селфи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -10,16 +11,14 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Device">
         </a>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Поиск по сайту</label>
-          <input type="search" name="search" id="search" autofocus placeholder="Поиск по сайту">
-          <input type="submit" value="Поиск по сайту">
+          <input class="search-input" type="search" name="search" id="search" autofocus placeholder="Поиск по сайту">
+          <input class="search-button" type="submit" value="Поиск по сайту">
         </form>
         <ul class="user-navigation">
           <li class="login-link"><a href="profile.html">Валентин Петухов</a></li>
-          <li class="login-link"><a href="logout.html">Выйти</a></li>
-        </ul>
-        <ul>
+          <li class="login-link logout-link"><a href="logout.html">Выйти</a></li>
           <li><a href="compare.html">Сравнить</a></li>
           <li><a href="cart.html">Корзина</a></li>
         </ul>
@@ -57,34 +56,24 @@
             <legend>Цвет</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-black" type="checkbox" checked>
-                  Черный
-                </label>
+                <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-black" id="filter-color-black" type="checkbox" checked>
+                <label for="filter-color-black">Черный</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-white" type="checkbox">
-                  Белый
-                </label>
+                <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-white" id="filter-color-white" type="checkbox" disabled>
+                <label for="filter-color-white">Белый</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-blue" type="checkbox" checked>
-                  Синий
-                </label>
+                <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-blue" id="filter-color-blue" type="checkbox" checked>
+                <label for="filter-color-blue">Синий</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-red" type="checkbox" checked>
-                  Красный
-                </label>
+                <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-red" id="filter-color-red" type="checkbox" checked>
+                <label for="filter-color-red">Красный</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-pink" type="checkbox">
-                  Розовый
-                </label>
+                <input class="visually-hidden filter-input filter-input-checkbox" name="filter-color-pink" id="filter-color-pink" type="checkbox">
+                <label for="filter-color-pink">Розовый</label>
               </li>
             </ul>
           </fieldset>
@@ -92,16 +81,12 @@
             <legend>Bluetooth</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input filter-input-radio" name="bluetooth" type="radio" value="yes" checked>
-                  Есть
-                </label>
+                <input class="visually-hidden filter-input filter-input-radio" name="bluetooth" type="radio" id="filter-bluetooth-yes" value="yes" checked>
+                <label for="filter-bluetooth-yes">Есть</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input filter-input-radio" name="bluetooth" type="radio" value="no">
-                  Нет
-                </label>
+                <input class="visually-hidden filter-input filter-input-radio" name="bluetooth" type="radio" id="filter-bluetooth-no" value="no" disabled>
+                <label for="filter-bluetooth-no">Нет</label>
               </li>
             </ul>
           </fieldset>
@@ -120,7 +105,7 @@
             <img class="catalog-item-image" src="img/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
             <p class="catalog-item-button">
               <a class="button" href="#">В корзину</a>
-              <a href="compare.html">Добавить к сравнению</a>
+              <a class="compare-button" href="compare.html">Добавить к сравнению</a>
             </p>
           </li>
           <li class="catalog-item">
@@ -131,7 +116,7 @@
             <img class="catalog-item-image" src="img/item-2-jpg.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             <p class="catalog-item-button">
               <a class="button" href="#">В корзину</a>
-              <a href="compare.html">Добавить к сравнению</a>
+              <a class="compare-button" href="compare.html">Добавить к сравнению</a>
             </p>
           </li>
           <li class="catalog-item">
@@ -142,7 +127,7 @@
             <img class="catalog-item-image" src="img/item-3-jpg.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             <p class="catalog-item-button">
               <a class="button" href="#">В корзину</a>
-              <a href="compare.html">Добавить к сравнению</a>
+              <a class="compare-button" href="compare.html">Добавить к сравнению</a>
             </p>
           </li>
           <li class="catalog-item">
@@ -153,7 +138,7 @@
             <img class="catalog-item-image" src="img/item-4-jpg.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
             <p class="catalog-item-button">
               <a class="button" href="#">В корзину</a>
-              <a href="compare.html">Добавить к сравнению</a>
+              <a class="compare-button" href="compare.html">Добавить к сравнению</a>
             </p>
             <p class="label">new</p>
           </li>
@@ -170,8 +155,6 @@
         <ul class="footer-user-navigation">
           <li class="login-link"><a href="profile.html">Валентин Петухов</a></li>
           <li class="login-link"><a href="logout.html">Выйти</a></li>
-        </ul>
-        <ul>
           <li><a href="compare.html">Сравнить</a></li>
           <li><a href="cart.html">Корзина</a></li>
         </ul>
@@ -184,14 +167,14 @@
           <li><a href="warranty.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <a href="tel:+74954959595">Тел.:+7(495)495-95-95</a>
+        <a class="footer-phone" href="tel:+74954959595">Тел.:+7(495)495-95-95</a>
       </div>
 
       <div class="footer-row">
         <ul class="footer-social">
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
         </ul>
         <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
