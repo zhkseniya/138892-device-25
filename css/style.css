@@ -60,13 +60,23 @@ a{
 
 .main-navigation{
     color: #000000;
-    background-color: #f0c52e;
+    background-color: #f7e296;
+}
+
+.main-header-logo:hover svg,
+.footer-logo:hover svg{
+    opacity: 0.6;
+}
+
+.main-header-logo:focus svg,
+.footer-logo:focus svg{
+    opacity: 0.3;
 }
 
 .search-input{
     font:inherit;
     color: rgba(0, 0, 0, 0.3);
-    background-color: #f0c52e;
+    background-color: #f7e296;
     border: none;
 }
 
@@ -81,7 +91,7 @@ a{
 
 .search-button{
     font: inherit;
-    background-color: #f0c52e;
+    background-color: #f7e296;
     border: 2px solid #000000;
 }
 
@@ -164,6 +174,7 @@ a{
 }
 
 .button{
+    position: relative;
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -175,6 +186,27 @@ a{
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.button::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    width: 100%;
+    height: 8px;
+    content: '';
+    background-color:#f0c52e;
+    transform: translate(-50%, -50%);
+}
+
+.button:hover::after,
+.button:focus::after{
+    height: 40px;
+}
+
+.button:focus{
+    opacity: 0.3;
 }
 
 .page-title{
@@ -295,6 +327,10 @@ a{
     background-color: #464646;
 }
 
+.footer-logo svg{
+    fill:#ffc600;
+}
+
 .footer-user-navigation,
 .footer-site-navigation,
 .footer-social{
@@ -379,7 +415,7 @@ a{
 .write-form input:focus,
 .write-form textarea:focus{
     color:#464646;
-    border: 3px solid #f0c52e;
+    border: 3px solid #f7e296;
     background-color: #ffffff;
 }
 
