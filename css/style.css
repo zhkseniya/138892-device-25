@@ -115,43 +115,62 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation-list a{
-    display: block;
     color: #000000;
+}
+
+.header-user-icon{
+    width: 13px;
+    height: 12px;
+}
+
+.header-compare-icon{
+    width: 10px;
+    height: 10px;
+}
+
+.header-cart-icon{
+    width: 12px;
+    height: 12px;
 }
 
 .user-navigation{
     display: flex;
-    justify-content: flex-start;
-    margin-left: auto;
+    justify-content: space-between;
     width: 500px;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .user-navigation li{
-    padding-left: 28px;
     vertical-align: middle;
 }
 
 .user-navigation li:first-child{
-    width: 280px;
+    width: 260px;
 }
 
 .user-navigation li:last-child{
     margin-left: 35px;
 }
 
-.logout-link a{
-    color: rgba(0, 0, 0, 0.3);
+.logout-link{
+    margin-left: 19px;
+    color: #000000;
+    opacity: 0.3;
 }
 
-.logout-link a:focus{
+.logout-link:focus{
     color: #000000;
 }
 
-.user-navigation a,
 .site-navigation-list a,
 .main-catalog-list a{
     display: block;
+    color: #000000;
+}
+
+.user-navigation a{
     color: #000000;
 }
 
@@ -170,11 +189,25 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form{
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 356px;
     margin: 0;
     padding: 0;
+}
+
+.search-form::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
 }
 
 .search-input{
@@ -255,6 +288,20 @@ input[type="radio"].visually-hidden {
     line-height: 2.4;
     letter-spacing: 0.2px;
     text-transform: none;
+}
+
+.catalog-link::after{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    right: -26px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/plus.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    opacity: 0.3;
 }
 
 .page-content{
@@ -811,6 +858,24 @@ fieldset{
 
 .footer-user-navigation .logout-link{
     margin-left: 15px;
+}
+
+.footer-user-icon{
+    width: 13px;
+    height: 12px;
+    fill: #ffc600;
+}
+
+.footer-compare-icon{
+    width: 10px;
+    height: 10px;
+    fill: #ffc600;
+}
+
+.footer-cart-icon{
+    width: 12px;
+    height: 12px;
+    fill: #ffc600;
 }
 
 .footer-row-site{
