@@ -266,11 +266,8 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    padding-bottom: 56px;
     list-style: none;
-}
-
-.site-navigation-list{
-    padding-bottom: 165px;
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -294,10 +291,13 @@ input[type="radio"].visually-hidden {
     display: none;
     position: absolute;
     top: 40px;
-    left: 0;
-    width: 550px;
+    left: -60px;
+    z-index: 3;
+    width: 1100px;
     margin: 0;
     padding: 0;
+    padding-left: 60px;
+    padding-bottom: 40px;
     list-style: none;
     font-family: 'OpenSans', Arial, sans-serif;
     font-size: 15px;
@@ -305,13 +305,22 @@ input[type="radio"].visually-hidden {
     line-height: 2.4;
     letter-spacing: 0.2px;
     text-transform: none;
+    background-color: #f7e296;
+}
+
+.catalog-list-item{
+    padding: 0;
+    padding-right: 60px;
+    margin: 0;
+    margin-top: -10px;
+    margin-right: 0px;
 }
 
 .catalog-link:hover + .main-catalog-list{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     
 }
 
