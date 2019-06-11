@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Gilroy ExtraBold';
-    src: url('../fonts/gilroylight.woff'),
+    src: url('../fonts/gilroyextrabold.woff'),
          url('../fonts/gilroyextrabold.woff2');
 }
 
@@ -202,19 +202,6 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 
-.search-form::before{
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 2px;
-    width: 16px;
-    height: 16px;
-    background-image: url('../img/search.svg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100%;
-}
-
 .search-input{
     width: 100%;
     padding-left: 40px;
@@ -230,11 +217,38 @@ input[type="radio"].visually-hidden {
 
 .search-input:focus{
     color: #000000;
-    border-bottom: 2px solid #000000;
+}
+
+.search-label{
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+}
+
+.search-label::before{
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    display: none;
+    width: 400px;
+    height: 2px;
+    background-color: #000000;
 }
 
 .search-button{
     visibility: hidden;
+    position: absolute;
+    top: -9px;
+    left: 330px;
+    width: 85px;
+    padding: 7.5px 0;
     font: inherit;
     background-color: #f7e296;
     border: 2px solid #000000;
@@ -252,6 +266,10 @@ input[type="radio"].visually-hidden {
 
 .search-input:focus + .search-button{
     visibility: visible;
+}
+
+.search-input:focus ~ .search-label::before{
+    display: block;
 }
 
 .site-navigation-list{
@@ -275,7 +293,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-list > li:first-child{
     position: relative;
-    margin-right: 277px;
+    margin-right: 250px;
 }
 
 .site-navigation-list > li:last-child{
@@ -311,19 +329,27 @@ input[type="radio"].visually-hidden {
     margin-right: 0px;
 }
 
+.catalog-link{
+    padding-bottom: 20px;
+    padding-right: 30px;
+}
+
 .catalog-link:hover + .main-catalog-list{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    
+}
+
+.main-catalog-list:hover{
+    display: flex;
 }
 
 .catalog-link::after{
     content: '';
     position: absolute;
-    bottom: 5px;
-    right: -24px;
+    bottom: 24px;
+    right: -4px;
     width: 16px;
     height: 16px;
     background-image: url('../img/plus.svg');
@@ -969,11 +995,16 @@ fieldset{
 
 .footer-user-navigation a:hover{
     color: #ffffff;
+    opacity: 1;
 }
 
 .footer-user-navigation a:focus{
     color: #ffffff;
     opacity: 0.3;
+}
+
+.footer-icon{
+    opacity: 1;
 }
 
 .footer-user-navigation a:hover + .footer-icon{
