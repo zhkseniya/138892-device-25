@@ -101,7 +101,7 @@ input[type="radio"].visually-hidden {
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
     padding: 0;
     list-style: none;
 }
@@ -279,7 +279,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    padding-bottom: 50px;
+    padding-bottom: 29px;
     list-style: none;
     font-family: 'Gilroy ExtraBold', Arial, sans-serif;
     font-size: 18px;
@@ -293,7 +293,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-list > li:first-child{
     position: relative;
-    margin-right: 250px;
+    margin-right: 265px;
 }
 
 .site-navigation-list > li:last-child{
@@ -331,7 +331,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-link{
     padding-bottom: 20px;
-    padding-right: 30px;
+    padding-right: 18px;
 }
 
 .catalog-link:hover + .main-catalog-list{
@@ -384,7 +384,7 @@ input[type="radio"].visually-hidden {
     font-size: 47px;
     font-weight: 800;
     line-height: 1.02;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.52px;
     text-align: left;
     color: #000000;
 }
@@ -427,8 +427,13 @@ input[type="radio"].visually-hidden {
     margin-bottom: 30px;
 }
 
+.aboutUs p:nth-of-type(1){
+    letter-spacing: 0.135px;
+}
+
 .aboutUs p:nth-of-type(2){
     margin-bottom: 66px;
+    letter-spacing: -0.02px;
 }
 
 .aboutUs ul{
@@ -436,6 +441,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 62px;
     padding: 0;
     list-style: none;
+    letter-spacing: -0.208px;
 }
 
 .aboutUs ul li{
@@ -496,7 +502,7 @@ input[type="radio"].visually-hidden {
     font-size: 18px;
     font-weight: 800;
     line-height: 1.33;
-    letter-spacing: 3.6px;
+    letter-spacing: 2.91px;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
@@ -947,7 +953,8 @@ fieldset{
 }
 
 .footer-row-site{
-    margin-bottom: 63px;
+    justify-content: flex-start;
+    margin-bottom: 60px;
 }
 
 .footer-row-social{
@@ -972,10 +979,16 @@ fieldset{
     padding: 0;
 }
 
+.footer-row-site p:first-child{
+    margin-right: 163px;
+    letter-spacing: 0.35px;
+}
+
 .footer-site-navigation{
     width: 440px;
     margin: 0;
     padding: 0;
+    padding-top: 3px;
 }
 
 .footer-user-navigation,
@@ -985,6 +998,14 @@ fieldset{
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
+}
+
+.footer-site-navigation li:first-child{
+    margin-right: 21px;
+}
+
+.footer-site-navigation li:nth-child(2){
+    margin-right: 29px;
 }
 
 .footer-user-navigation a{
@@ -1037,7 +1058,9 @@ fieldset{
 }
 
 .footer-phone{
+    margin-left: auto;
     font: inherit;
+    letter-spacing: 0.53px;
     color: #ffffff;
 }
 
@@ -1068,8 +1091,12 @@ fieldset{
     margin-left: 20px;
 }
 
+.instagram{
+    margin-left: 22px;
+}
+
 .twitter{
-    margin-right: -11px;
+    margin-left: 22px;
 }
 
 .footer-logo-htmlacademy:hover{
