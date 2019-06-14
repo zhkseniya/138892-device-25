@@ -101,7 +101,7 @@ input[type="radio"].visually-hidden {
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
-    margin-bottom: 37px;
+    margin-bottom: 38px;
     padding: 0;
     list-style: none;
 }
@@ -276,7 +276,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
     padding-bottom: 29px;
@@ -284,20 +284,27 @@ input[type="radio"].visually-hidden {
     font-family: 'Gilroy ExtraBold', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
-    font-style: normal;
+    /*font-style: normal;
     font-stretch: normal;
     line-height: 1.33;
-    letter-spacing: 3.6px;
+    letter-spacing: 3.6px;*/
     text-transform: uppercase;
 }
 
 .site-navigation-list > li:first-child{
     position: relative;
-    margin-right: 265px;
+    margin-right: 290px;
 }
 
 .site-navigation-list > li:last-child{
-    margin-left: 68px;
+    margin-left: auto;
+}
+
+.site-navigation-list > li> a{
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 3.1px;
+    font-style: normal;
 }
 
 .main-catalog-list {
@@ -331,7 +338,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-link{
     padding-bottom: 20px;
-    padding-right: 18px;
+    padding-right: 34px;
 }
 
 .catalog-link:hover + .main-catalog-list{
@@ -349,7 +356,7 @@ input[type="radio"].visually-hidden {
     content: '';
     position: absolute;
     bottom: 24px;
-    right: -4px;
+    right: 4px;
     width: 16px;
     height: 16px;
     background-image: url('../img/plus.svg');
@@ -359,8 +366,21 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
 }
 
+.delivery{
+    margin-right: 35px;
+}
+
+.contacts-link{
+    margin-right: -2px;
+}
+
 .page-content{
     margin-bottom: 90px;
+}
+
+/* временно для сетки -----------------------------------*/
+.page-content-index{
+    padding-top: 1582px;
 }
 
 .container{
@@ -379,12 +399,13 @@ input[type="radio"].visually-hidden {
 
 .columns h2{
     margin: 0;
+    margin-left: -2px;
     padding: 0;
     font-family: 'Gilroy ExtraBold', Arial, sans-serif;
     font-size: 47px;
     font-weight: 800;
-    line-height: 1.02;
-    letter-spacing: -0.52px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
     text-align: left;
     color: #000000;
 }
@@ -432,21 +453,21 @@ input[type="radio"].visually-hidden {
 }
 
 .aboutUs p:nth-of-type(2){
-    margin-bottom: 66px;
+    margin-bottom: 65px;
     letter-spacing: -0.02px;
 }
 
 .aboutUs ul{
     margin: 0;
-    margin-bottom: 62px;
+    margin-bottom: 63px;
     padding: 0;
     list-style: none;
-    letter-spacing: -0.208px;
 }
 
 .aboutUs ul li{
     position: relative;
-    padding-left: 36px;
+    padding-left: 35px;
+    letter-spacing: -0.2px;
 
 }
 
@@ -465,6 +486,10 @@ input[type="radio"].visually-hidden {
 
 .about-button{
     width: 260px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 3.28px;
+    font-style: normal;
 }
 
 .contacts{
@@ -535,7 +560,7 @@ input[type="radio"].visually-hidden {
 .catalog-container{
     margin: 0;
     padding: 0;
-    padding-top: 37px;
+    padding-top: 38px;
     box-sizing: border-box;
 }
 
@@ -546,8 +571,8 @@ input[type="radio"].visually-hidden {
     font-family: 'Gilroy ExtraBold', Arial, sans-serif;
     font-size: 47px;
     font-weight: 800;
-    line-height: 1.02;
-    letter-spacing: 0.5px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
     text-align: left;
     color: #000000;
 }
@@ -562,7 +587,11 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs li{
     position: relative;
-    margin-right: 39px;
+    margin-right: 36px;
+}
+
+.breadcrumbs li:nth-child(2){
+    margin-right: 38px;
 }
 
 .breadcrumbs li:last-child{
@@ -580,6 +609,10 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100%;
+}
+
+.breadcrumbs li:nth-child(2)::after{
+    right: -22px;
 }
 
 .breadcrumbs li:last-of-type::after {
@@ -648,8 +681,8 @@ fieldset{
     font-family: 'Gilroy ExtraBold', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.33;
-    letter-spacing: 0.2px;
+    line-height: 24px;
+    letter-spacing: -0.38px;
     text-align: left;
     color: #000000;
     border-top: 2px solid #000000;
@@ -821,8 +854,8 @@ fieldset{
     font-weight: 800;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: 0.2px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
     text-align: left;
     color: #000000;
 }
@@ -831,8 +864,8 @@ fieldset{
     font-family: 'Gilroy ExtraBold', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.33;
-    letter-spacing: 0.2px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
     text-align: left;
     color: #000000;
 }
@@ -878,7 +911,7 @@ fieldset{
     font-weight: 800;
     color: #000000;
     text-align: center;
-    padding-top: 16px;
+    padding-top: 15px;
     text-transform: uppercase;
     background-color: transparent;
     border: 2px solid #000000;
@@ -981,7 +1014,9 @@ fieldset{
 
 .footer-row-site p:first-child{
     margin-right: 163px;
-    letter-spacing: 0.35px;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: -0.02px;
 }
 
 .footer-site-navigation{
@@ -996,16 +1031,16 @@ fieldset{
 .footer-social{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     list-style: none;
 }
 
 .footer-site-navigation li:first-child{
-    margin-right: 21px;
+    margin-right: 33px;
 }
 
 .footer-site-navigation li:nth-child(2){
-    margin-right: 29px;
+    margin-right: 32px;
 }
 
 .footer-user-navigation a{
@@ -1040,8 +1075,8 @@ fieldset{
     font-family: 'Gilroy ExtraBold', Arial, sans-serif ;
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.33;
-    letter-spacing: 3.6px;
+    line-height: 24px;
+    letter-spacing: 3.46px;
     text-align: left;
     color: #ffffff;
     text-transform: uppercase;
@@ -1060,7 +1095,7 @@ fieldset{
 .footer-phone{
     margin-left: auto;
     font: inherit;
-    letter-spacing: 0.53px;
+    letter-spacing: -0.02px;
     color: #ffffff;
 }
 
@@ -1088,7 +1123,7 @@ fieldset{
 }
 
 .fb{
-    margin-left: 20px;
+    margin-left: 18px;
 }
 
 .instagram{
