@@ -27,7 +27,6 @@ body{
     margin: 0 auto;
     padding: 0;
     padding-top: 40px;
-
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -150,7 +149,7 @@ input[type="radio"].visually-hidden {
 }
 
 .logout-link{
-    margin-left: 19px;
+    margin-left: 18px;
     color: #000000;
     opacity: 0.3;
 }
@@ -204,7 +203,7 @@ input[type="radio"].visually-hidden {
 
 .search-input{
     width: 100%;
-    padding-left: 40px;
+    padding-left: 39px;
     font:inherit;
     color: rgba(0, 0, 0, 0.3);
     background-color: #f7e296;
@@ -221,7 +220,7 @@ input[type="radio"].visually-hidden {
 
 .search-label{
     position: absolute;
-    top: 8px;
+    top: 9px;
     left: 2px;
     width: 16px;
     height: 16px;
@@ -234,7 +233,7 @@ input[type="radio"].visually-hidden {
 .search-label::before{
     content: "";
     position: absolute;
-    bottom: -16px;
+    bottom: -15px;
     left: 0;
     display: none;
     width: 400px;
@@ -562,6 +561,10 @@ input[type="radio"].visually-hidden {
     padding: 0;
     padding-top: 38px;
     box-sizing: border-box;
+}
+
+.catalog-page .main-header-logo{
+    top: -16px;
 }
 
 .page-title{
@@ -945,7 +948,16 @@ fieldset{
 }
 
 .footer-row-user{
-    margin-bottom: 21px;
+    position: relative;
+    justify-content: flex-end;
+    margin-bottom: 37px;
+    margin-top: -2px;
+}
+
+.footer-logo{
+    position: absolute;
+    left: 0;
+    top: 2px;
 }
 
 .footer-logo svg{
@@ -957,24 +969,41 @@ fieldset{
     padding: 0;
 }
 
+.footer-user-navigation li:first-child{
+    margin-left: 47px;
+}
+
+.catalog-page .footer-user-navigation li:first-child{
+    margin-left: 45px;
+}
+
 .footer-user-navigation li{
-    margin-left: 48px;
+    margin-left: 45px;
+}
+
+.footer-user-navigation li:last-child{
+    margin-left: 43px;
 }
 
 .footer-user-navigation .logout-link{
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .footer-user-icon{
     width: 13px;
     height: 12px;
-    margin-right: 6px;
+    margin-right: 9px;
     fill: #ffc600;
+}
+
+.catalog-page .footer-user-icon{
+    margin-right: 13px;
 }
 
 .footer-compare-icon{
     width: 10px;
     height: 10px;
+    margin-right: 5px;
     fill: #ffc600;
 }
 
@@ -1282,4 +1311,5 @@ fieldset{
     margin-top: -280px;
     margin-left: -480px;
 }
+
 
