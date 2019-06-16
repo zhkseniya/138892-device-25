@@ -308,11 +308,6 @@ input[type="radio"].visually-hidden {
     list-style: none;
     font-family: 'Gilroy ExtraBold', Arial, sans-serif;
     font-size: 18px;
-    font-weight: 800;
-    /*font-style: normal;
-    font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: 3.6px;*/
     text-transform: uppercase;
 }
 
@@ -327,8 +322,9 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-list > li> a{
     font-size: 18px;
+    font-weight: 800;
     line-height: 24px;
-    letter-spacing: 3.1px;
+    letter-spacing: 3.4px;
     font-style: normal;
 }
 
@@ -457,7 +453,6 @@ input[type="radio"].visually-hidden {
 .columns ul{
     font-family: 'Gilroy ExtraBold', Arial, sans-serif;
     font-size: 16px;
-    font-weight: 800;
     line-height: 2.5;
     color: #000000;
 }
@@ -511,7 +506,7 @@ input[type="radio"].visually-hidden {
 .aboutUs ul li{
     position: relative;
     padding-left: 35px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
 
 }
 
@@ -576,7 +571,7 @@ input[type="radio"].visually-hidden {
     font-size: 18px;
     font-weight: 800;
     line-height: 1.33;
-    letter-spacing: 2.91px;
+    letter-spacing: 3.4px;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
@@ -1173,14 +1168,13 @@ fieldset{
     margin-right: 163px;
     font-size: 15px;
     line-height: 30px;
-    letter-spacing: -0.02px;
 }
 
 .footer-site-navigation{
     width: 440px;
     margin: 0;
     padding: 0;
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .footer-user-navigation,
@@ -1200,11 +1194,11 @@ fieldset{
 }
 
 .footer-site-navigation li:first-child{
-    margin-right: 33px;
+    margin-right: 36px;
 }
 
 .footer-site-navigation li:nth-child(2){
-    margin-right: 32px;
+    margin-right: 35px;
 }
 
 .footer-user-navigation a{
