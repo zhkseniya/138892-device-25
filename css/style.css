@@ -1393,12 +1393,19 @@ input[type="radio"].visually-hidden {
     color: rgba(0, 0, 0, 0.1);
 }
 
-.catalog-columns{
+.catalog-row-header{
+    background-image: linear-gradient(to right, #d9d9d9 25%, #ebebeb 25%);
+}
+
+.catalog-row-main{
+    background-image: linear-gradient(to right, #ebebeb 25%, #ffffff 25%);
+}
+
+.catalog-row-wrapper{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     width: 1160px;
     margin: 0 auto;
-    padding: 0;
 }
 
 .filters{
@@ -1406,17 +1413,6 @@ input[type="radio"].visually-hidden {
     width: 468px;
     margin: 0;
     padding: 0;
-    background-color: #ebebeb;
-}
-
-.filters::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 328px;
-    z-index: -1;
-    width: 100vw;
-    height: 100%;
     background-color: #ebebeb;
 }
 
@@ -1458,16 +1454,6 @@ input[type="radio"].visually-hidden {
     letter-spacing: 3.1px;
     text-transform: uppercase;
     color: #000000;
-}
-
-.filters-title-wrap::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 328px;
-    width: 100vw;
-    height: 70px;
-    background-color: #d9d9d9;
 }
 
 .filter .legend-price{
@@ -1744,17 +1730,6 @@ fieldset{
     padding-top: 20px;
     padding-left: 72px;
     padding-bottom: 21px;
-    background-color: #ebebeb;
-}
-
-.sort-wrapper::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100vw;
-    height: 70px;
     background-color: #ebebeb;
 }
 
