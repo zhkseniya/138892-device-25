@@ -1415,7 +1415,7 @@ input[type="radio"].visually-hidden {
     top: 0;
     right: 328px;
     z-index: -1;
-    width: 140px;
+    width: 100vw;
     height: 100%;
     background-color: #ebebeb;
 }
@@ -1465,7 +1465,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 0;
     right: 328px;
-    width: 140px;
+    width: 100vw;
     height: 70px;
     background-color: #d9d9d9;
 }
@@ -1487,11 +1487,8 @@ input[type="radio"].visually-hidden {
 
 .range-controls {
     position: relative;
-
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1754,9 +1751,9 @@ fieldset{
     content: "";
     position: absolute;
     top: 0;
-    left: 832px;
+    left: 0;
     z-index: -1;
-    width: 140px;
+    width: 100vw;
     height: 70px;
     background-color: #ebebeb;
 }
